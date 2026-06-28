@@ -5,8 +5,7 @@
 <h1 align="center">pawjob</h1>
 
 <p align="center">
-  <b>Free software for archived 2018 CS:GO</b><br>
-  <sub>Not a RAT. Not a stealer. Just a cheat for a dead game.</sub>
+  <b>Cheat for archived 2018 CS:GO</b>
 </p>
 
 ---
@@ -16,7 +15,7 @@
   <a href="#why-2018-csgo">Why 2018 CS:GO?</a> &nbsp;·&nbsp;
   <a href="#building">Building</a> &nbsp;·&nbsp;
   <a href="#how-it-works">How it works</a> &nbsp;·&nbsp;
-  <a href="#not-a-rat">Not a RAT</a> &nbsp;·&nbsp;
+  <a href="#network">Network</a> &nbsp;·&nbsp;
   <a href="#credits">Credits</a>
 </p>
 
@@ -69,25 +68,18 @@ MSBuild pawjob\pawjob.vcxproj -p:Configuration=Release -p:Platform=Win32 -m
 3. On the same launch, `steam.dll` starts an in-process localhost cloud emulator on `127.0.0.1:5444`. It dies with `steam.exe` on exit — no child process, no external dependency.
 4. **`pawjob.dll`** is the cheat module loaded into `csgo.exe`. It sets up a local config tree next to the game executable.
 
-## Not a RAT
+## Network
 
-Every socket the DLLs touch is `127.0.0.1`. There is:
-
-- **No outbound networking** — no telemetry, no exfiltration, no remote command channel
-- **No credential access** — no Steam password, SSFN, or login token reading
-- **No persistence** — no startup entries, no scheduled tasks, no services
-- **No background processes** — the emulator runs in-process inside `steam.exe` and dies with it
-
-The only network redirection is the historical cloud endpoint `51.222.158.143:5444` → `127.0.0.1:5444`. Unrelated Steam/game networking is left alone. You can verify this yourself — the full source is right here.
+Every socket the DLLs touch is `127.0.0.1`. The only network redirection is the historical cloud endpoint `51.222.158.143:5444` → `127.0.0.1:5444`. Unrelated Steam/game networking is left alone. The full source is right here — verify it yourself.
 
 ## Credits
 
+- **PinkKing** — cracked moneybot
 - **MOxXiE1337** — performance fixes
 - Built with [MinHook](https://github.com/TsudaKageyu/minHook)
 
 ---
 
 <p align="center">
-  <sub>pawjob is free software. The 2018 CS:GO archive is a dead game with no live anti-cheat.<br>
-  Don't use this on CS2. Don't be weird.</sub>
+  <sub>Don't use this on CS2. Don't be weird.</sub>
 </p>
