@@ -12,7 +12,6 @@
 
 <p align="center">
   <a href="#what-is-this">What is this?</a> &nbsp;·&nbsp;
-  <a href="#why-2018-csgo">Why 2018 CS:GO?</a> &nbsp;·&nbsp;
   <a href="#building">Building</a> &nbsp;·&nbsp;
   <a href="#how-it-works">How it works</a> &nbsp;·&nbsp;
   <a href="#network">Network</a> &nbsp;·&nbsp;
@@ -31,12 +30,6 @@
 | `pawjob.dll` | **x86** | `csgo.exe` | The cheat module itself |
 
 Steam dropped 32-bit Windows on January 1, 2026, so `steam.exe` is now a 64-bit process. CS:GO is still 32-bit (WOW64). That's why there are two DLLs at different bitness.
-
-## Why 2018 CS:GO?
-
-- **CS2 is the current game.** Nobody is playing 2018 CS:GO for fair matches anymore.
-- **VAC is gone.** A CS2 update split CS:GO and CS2 into separate AppIDs — inventory, ranks, and VAC bans no longer sync. There is no anti-cheat surface left on the 2018 build.
-- **It's a dead game.** Releasing this costs no real player a competitive match.
 
 ## Building
 
