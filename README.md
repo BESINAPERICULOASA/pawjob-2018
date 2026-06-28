@@ -70,9 +70,3 @@ Every socket the DLLs touch is `127.0.0.1`. The only network redirection is the 
 - **PinkKing** — cracked moneybot
 - **MOxXiE1337** — performance fixes
 - Built with [MinHook](https://github.com/TsudaKageyu/minHook)
-
----
-
-<p align="center">
-  <sub>Don't use this on CS2. Don't be weird.</sub>
-</p>
