@@ -5,7 +5,9 @@
 <h1 align="center">pawjob</h1>
 
 <p align="center">
-  <b>Cheat for archived 2018 CS:GO</b>
+  <b>Cheat for archived 2018 CS:GO</b><br>
+  <a href="https://pawjob.pw">pawjob.pw</a> &nbsp;·&nbsp;
+  <a href="https://discord.com/invite/2ngmsDDB">Discord</a>
 </p>
 
 ---
